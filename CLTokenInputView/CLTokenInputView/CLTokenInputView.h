@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 #import "CLToken.h"
+#import "CLTokenView.h"
 
 #if __has_feature(objc_generics)
 #define CL_GENERIC_ARRAY(type) NSArray<type>
@@ -97,6 +98,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (assign, nonatomic) IBInspectable BOOL drawBottomBorder;
 
 @property (readonly, nonatomic) CL_GENERIC_ARRAY(CLToken *) *allTokens;
+@property (readonly, nonatomic) CL_GENERIC_ARRAY(CLTokenView *) *allTokenView;
 @property (readonly, nonatomic, getter = isEditing) BOOL editing;
 @property (readonly, nonatomic) CGFloat textFieldDisplayOffset;
 @property (copy, nonatomic, nullable) NSString *text;
@@ -104,8 +106,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)addToken:(CLToken *)token;
 - (void)removeToken:(CLToken *)token;
 - (nullable CLToken *)tokenizeTextfieldText;
-
-- (NSArray *)allTokenView;
 
 // Editing
 - (void)beginEditing;
