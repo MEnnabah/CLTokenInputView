@@ -9,6 +9,7 @@
 #import "CLTokenInputView.h"
 
 #import "CLBackspaceDetectingTextField.h"
+#import "CLTokenView.h"
 
 static CGFloat const HSPACE = 0.0;
 static CGFloat const TEXT_FIELD_HSPACE = 4.0; // Note: Same as CLTokenView.PADDING_X
