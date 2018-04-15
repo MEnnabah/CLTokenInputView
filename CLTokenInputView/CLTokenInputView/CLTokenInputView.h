@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 #import "CLToken.h"
+#import "CLTokenView.h"
 
 #if __has_feature(objc_generics)
 #define CL_GENERIC_ARRAY(type) NSArray<type>
@@ -105,7 +106,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)removeToken:(CLToken *)token;
 - (nullable CLToken *)tokenizeTextfieldText;
 
-- (NSArray *)allTokenView;
+- (nullable CLTokenView *)allTokenView;
 
 // Editing
 - (void)beginEditing;
