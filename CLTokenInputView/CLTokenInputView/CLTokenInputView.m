@@ -346,7 +346,7 @@ static CGFloat const FIELD_MARGIN_X = 4.0; // Note: Same as CLTokenView.PADDING_
         [self.delegate tokenInputViewDidBeginEditing:self];
     }
     self.tokenViews.lastObject.hideUnselectedComma = NO;
-    [self unselectAllTokenViewsAnimated:YES];
+//    [self unselectAllTokenViewsAnimated:YES];
 }
 
 - (void)textFieldDidEndEditing:(UITextField *)textField
