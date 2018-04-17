@@ -161,7 +161,7 @@ static CGFloat const FIELD_MARGIN_X = 4.0; // Note: Same as CLTokenView.PADDING_
     return [self.tokens copy];
 }
 
-- (NSArray *)allTokenView
+- (NSArray *)allTokenViews
 {
     return [self.tokenViews copy];
 }
